@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    background-color: hsl(226, 43%, 10%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.container{
+  display: grid;
+  grid-template-columns: 100px 100px 200px 200px 200px;
+  grid-template-areas: " jeremy jeremy work play study"
+  " jeremy jeremy exercise social self";
+  margin-left: 100px;
+  gap: 10px;
+}
+.jeremy{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 80%;
+    grid-area: jeremy;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 20px;
+}
+.jeremy .up{
+    background-color: hsl(246, 80%, 60%);
+    padding: 20px;
+    border-radius: 20px;
+}
+.jeremy .down{
+    padding: 20px;
+}
+.work{
+    grid-area: work;
+    background-color: hsl(15, 100%, 70%);
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;
+}
+.workimg{
+    margin-left: 60px;
+}
+.work .up{
+    height: 50px;
+    position: relative;
+}
+.work .up img{
+    margin-left: 100px;
+    position:absolute;
+}
+.work .down{
+    background-color: hsl(235, 46%, 20%);
+    padding: 20px;
+    z-index: 100;
+    height: 100px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.play{
+    grid-area: play;
+    background-color: hsl(195, 74%, 62%);
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;
+}
+.play .up{
+    height: 50px;
+    position: relative;
+}
+.play .up img{
+    margin-left: 100px;
+    position:absolute;
+}
+.play .down{
+    background-color: hsl(235, 46%, 20%);
+    padding: 20px;
+    z-index: 100;
+    height: 100px;
+    position: relative;
+    border-radius: 20px;
+}
+.exercise{
+    grid-area: exercise;
+    background-color: hsl(145, 58%, 55%);
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.exercise .up{
+    height: 50px;
+    position: relative;
+}
+.exercise .up img{
+    margin-left: 100px;
+    position:absolute;
+}
+.exercise .down{
+    background-color: hsl(235, 46%, 20%);
+    padding: 20px;
+    z-index: 100;
+    height: 100px;
+    position: relative;
+    border-radius: 20px;
+}
+.social{
+    grid-area: social;
+    background-color: hsl(264, 64%, 52%);
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.social .up{
+    height: 50px;
+    position: relative;
+}
+.social .up img{
+    margin-left: 100px;
+    position:absolute;
+
+}
+.social .down{
+     background-color: hsl(235, 46%, 20%);
+    padding: 20px;
+    z-index: 100;
+    height: 100px;
+    position: relative;
+    border-radius: 20px;
+
+}
+.self{
+    grid-area: self;
+    background-color: hsl(43, 84%, 65%);
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.self .up{
+    height: 50px;
+    position: relative;
+}
+.self .up img{
+    margin-left: 100px;
+    position:absolute;
+}
+.self .down{
+     background-color: hsl(235, 46%, 20%);
+    padding: 20px;
+    z-index: 100;
+    height: 100px;
+    position: relative;
+    border-radius: 20px;
+}
+.study{
+    grid-area: study;
+    background-color: hsl(348, 100%, 68%);
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;
+}
+.study .up{
+    height: 50px;
+    position: relative;
+}
+.study .up img{
+    margin-left: 100px;
+    position:absolute;
+}
+.study .down{
+    background-color: hsl(235, 46%, 20%);
+    padding: 20px;
+    z-index: 100;
+    height: 100px;
+    position: relative;
+    border-radius: 20px;
+}
+li{
+    list-style: none;
+    margin-bottom: 10px;
+    color: #ccc;
+    font-size: 18px;
+}
+h1{
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 100;
+    margin-bottom: 40px;
+    font-family: 'Rubik', sans-serif;
+}
+.jeremy img{
+    width: 30%;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+li:hover{
+    color: white;
+    cursor: pointer;
+}

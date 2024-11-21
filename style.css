@@ -202,3 +202,9 @@ li:hover{
     color: white;
     cursor: pointer;
 }
+.style1{
+    font-size: 60px; color: white;
+}
+.style2{
+    color: #ccc
+}

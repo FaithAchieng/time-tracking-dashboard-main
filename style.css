@@ -11,11 +11,17 @@ body{
 
 .container{
   display: grid;
-  grid-template-columns: 100px 100px 200px 200px 200px;
+  grid-template-columns: 100px 100px 250px 250px 250px;
   grid-template-areas: " jeremy jeremy work play study"
   " jeremy jeremy exercise social self";
   margin-left: 100px;
   gap: 10px;
+  margin-left: auto; 
+  margin-right: auto; 
+  align-items: center; 
+  justify-content: center;
+  margin-top: 150px;
+   
 }
 .jeremy{
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -38,6 +44,7 @@ body{
     width: 90%;
     height: 150px;
     border-radius: 20px;
+    
 }
 .workimg{
     margin-left: 60px;
@@ -207,4 +214,7 @@ li:hover{
 }
 .style2{
     color: #ccc
+}
+.ellipsis{
+    margin-left: 90px;
 }

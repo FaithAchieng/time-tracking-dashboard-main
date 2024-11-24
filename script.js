@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return response.json();
         })
         .then(data => {
+            updateCards(data, 'weekly'); 
             setupButton(daily, data, 'daily');
             setupButton(weekly, data, 'weekly');
             setupButton(monthly, data, 'monthly');
@@ -33,13 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
             if (activityData) {
                 const { current, previous } = activityData.timeframes[timeframe];
 
-            
+                
                 ['daily', 'weekly', 'monthly'].forEach(tf => {
                     const container = card.querySelector(`.${tf}`);
                     if (container) container.textContent = ""; 
                 });
 
-            
+                
                 const container = card.querySelector(`.${timeframe}`);
                 if (container) {
                     const style1 = document.createElement('p');

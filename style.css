@@ -242,3 +242,41 @@ li:hover{
     cursor: pointer;
     background-color: hsl(235, 45%, 61%);
  }
+ @media screen and (max-width: 768px) {
+    .container {
+       display: grid;
+       grid-template-rows: 100px 200px 100px 100px 100px 100px 100px;
+       grid-template-areas: "jeremy jeremy"
+       "work"
+       "play"
+       "study"
+       "exercise"
+       "social"
+       "self";
+       gap: 10px;
+    }
+    .jeremy{
+        grid-area: jeremy;
+    }
+    .work{
+        grid-area: work;
+        
+    }
+    .play{
+        grid-area: play;
+    }
+    .study{
+        grid-area: study;
+    }
+    .exercise{
+        grid-area: exercise;
+    }
+    .social{
+        grid-area: social;
+    }
+    .self{
+        grid-area: self;
+    }
+
+    
+ }
